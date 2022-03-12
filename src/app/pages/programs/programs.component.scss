@@ -1,0 +1,18 @@
+.nav-link{
+    color: rgba(65, 64, 64, 0.986);
+}
+.nav-link:Hover{
+    text-decoration: underline;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.nav{
+    margin-left: 70px;
+}
+.nav .nav-item .nav-link:active {
+    background-color: bisque;
+}
+

@@ -1,0 +1,13 @@
+<a href="/myaccount/myprograms/detail" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        
+    <div class="text-center">
+        <img src="../../../assets/img/diet.jpg" class="rounded img-icon" alt="...">
+      </div>
+<div class="d-flex gap-2 w-100 justify-content-between">
+  <div>
+          <h6 class="mb-0">Diet</h6>
+    <p class="mb-0 opacity-75">Detailed Diet Plan + Basic Supplement Plan.</p>
+  </div>
+  <small class="text-nowrap"><span class="badge" [ngClass]="{'bg-success': status == 'Active','bg-danger': status == 'Expired','bg-secondary': status == 'Not started'}">{{status}}</span></small>
+</div>
+</a>

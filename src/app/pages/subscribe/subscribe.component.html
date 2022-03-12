@@ -1,0 +1,108 @@
+<app-cover [coverTitle]="'Subscription'"></app-cover>
+<div class="container">
+    <main>
+
+
+        <div class="row g-5 py-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Program Title</span>
+
+                </h4>
+                <div class="card shadow-sm">
+                    <img src="../../../assets/img/card/workout.jpg" alt="Program"
+                        class="bd-placeholder-img card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <small class="text-muted">12 Weeks</small>
+                            <small class="text-muted">150 TND</small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+
+                        <h4 class="mb-3">PROGRAM DETAILS</h4>
+
+                        <div class="col-md-6">
+                            <label for="cc-expiration" class="form-label">What time do you wake up ?</label>
+                            <input type="text" class="form-control" id="" placeholder="" required>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-cvv" class="form-label">What time do you leave for school/work ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cc-expiration" class="form-label">What time do you finish school/work ?</label>
+                            <input type="text" class="form-control" id="" placeholder="" required>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-cvv" class="form-label">What time do you usually go to the gym to ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-cvv" class="form-label">What time do you usually sleep ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+                        <div class="col-md-6"></div>
+
+                        <div class="col-md-4">
+                            <label for="cc-cvv" class="form-label">How old are you ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="cc-cvv" class="form-label">What's your weight ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="cc-cvv" class="form-label">How tall are you ? </label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        </div>
+                    </div>
+
+                    <button class="w-100 btn btn-primary btn-lg mt-4" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" (click)="subscribeToProgram()">Subscribe</button>
+
+
+
+                    <!-- Modal -->
+
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-confirm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="icon-box bg-primary">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                   
+                                </div>
+                                <div class="modal-body"> 
+                                    <h4 class="modal-title mb-3">Awesome!</h4>
+                                    <p class="text-center">Your subscription has been confirmed. Check your email for
+                                        detials. <br>
+                                    <button class="btn btn-primary mt-4" data-dismiss="modal">OK</button></p> 
+                                   
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,25 @@
+
+.hero{
+        background-image: url(../../../assets/img/hero.jpg);
+        background-size: cover;
+    }
+
+      
+      
+      /*
+       * Extra utilities
+       */
+      
+.flex-equal > * {
+        flex: 1;
+      }
+@media (min-width: 768px) {
+     .flex-md-equal > * {
+          flex: 1;
+        }
+      }
+
+      .img-program{
+        background-size: cover;
+      }
+      

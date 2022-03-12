@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'wa-coaching';
+  constructor(public location: Location) {
+}
+  isLogin() {
+    var titlee = this.location.prepareExternalUrl(this.location.path());
+      if( titlee === '/login' || titlee === '/signup' ) {
+          return true;
+      }
+      else {
+          return false;
+      }
+  }
 }
