@@ -12,7 +12,7 @@ export class AppComponent {
 }
   isLogin() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
-      if( titlee === '/login' || titlee === '/signup' ) {
+      if( titlee === '/login' || titlee === '/signup' || titlee.includes('/dashboard')  ) {
           return true;
       }
       else {

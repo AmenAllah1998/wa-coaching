@@ -1,0 +1,7 @@
+
+   <li class="nav-item" *ngFor="let menu of menuProperties">
+          <a class="nav-link active" aria-current="page" (click)="navigate(menu)">
+            <span data-feather="home"></span>
+            {{menu.titre}}
+          </a>
+        </li>

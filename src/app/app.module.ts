@@ -20,6 +20,14 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { CoverComponent } from './components/cover/cover.component';
+import { DashboardComponent } from './pages/BackOffice/dashboard/dashboard.component';
+import { DashboardHomeComponent } from './pages/BackOffice/dashboard-home/dashboard-home.component';
+import { MenuComponent } from './components/BackOffice/menu/menu.component';
+import { DashboardClientsComponent } from './pages/BackOffice/dashboard-clients/dashboard-clients.component';
+import { DashboardProgramsComponent } from './pages/BackOffice/dashboard-programs/dashboard-programs.component';
+import { DashboardSubscriptionsComponent } from './pages/BackOffice/dashboard-subscriptions/dashboard-subscriptions.component';
+import { DashboardStatisticsComponent } from './pages/BackOffice/dashboard-statistics/dashboard-statistics.component';
+import { InfoCardComponent } from './components/BackOffice/info-card/info-card.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +45,15 @@ import { CoverComponent } from './components/cover/cover.component';
     ProgramDetailsComponent,
     PlanListItemComponent,
     SignupComponent,
-    CoverComponent
+    CoverComponent,
+    DashboardComponent,
+    DashboardHomeComponent,
+    MenuComponent,
+    DashboardClientsComponent,
+    DashboardProgramsComponent,
+    DashboardSubscriptionsComponent,
+    DashboardStatisticsComponent,
+    InfoCardComponent
   ],
   imports: [
     BrowserModule,
